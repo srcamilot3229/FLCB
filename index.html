@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Favicon / Icono de la pestaña -->
+    <link rel="icon" type="image/jpeg" href="img/logo.jpg">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuego Lento - Chorizo & Barril</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="/img/logo.jpg" alt="Logo Fuego Lento" width="45" height="45" class="rounded-circle me-2 border border-warning">
+                <span class="brand-title">Fuego Lento</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto y Ubicación</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN INICIO / HERO CON VIDEO DE FONDO -->
+    <header id="inicio" class="hero-section position-relative d-flex align-items-center text-center overflow-hidden">
+        <!-- Video de Fondo en bucle y silenciado -->
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="video/banner-fuego.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+
+        <!-- Capa Oscura (Overlay) para que el texto resalte perfectamente -->
+        <div class="hero-overlay"></div>
+
+        <!-- Contenido del Banner -->
+        <div class="container position-relative z-2">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <img src="img/logo.jpg" alt="Logotipo Principal" class="hero-logo img-fluid mb-4 rounded-circle shadow-lg">
+                    <h1 class="display-4 fw-bold mb-3 text-white">Maestría artesanal en cada bocado</h1>
+                    <p class="lead mb-4 text-blanco-brillante">Descubre el auténtico sabor de nuestras carnes ahumadas al barril, chorizos artesanales y tradicionales frijoladas.</p>
+                    <a href="https://wa.me/573104503537?text=Hola,%20quiero%20hacer%20un%20pedido%20en%20Fuego%20Lento" target="_blank" class="btn btn-danger btn-lg px-5 py-3 shadow border-0 fw-bold" style="background-color: var(--color-rojo-fuego);">
+                        <i class="fab fa-whatsapp me-2"></i> Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN PRODUCTOS (Fondo Claro Pergamino) -->
+    <section id="productos" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="section-title fw-bold" style="color: var(--color-rojo-fuego);">Nuestros Productos</h2>
+                <div class="divider mx-auto"></div>
+                <p class="fw-semibold" style="color: #4a382c;">Preparados al calor de las brasas y con ingredientes 100% artesanales.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Producto 1 -->
+                <div class="col-md-4">
+                    <div class="card product-card h-100 shadow">
+                        <img src="/img/chorizos.jpg" class="card-img-top" alt="Chorizo artesanal">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Chorizo Artesanal</h3>
+                            <p class="card-text">Elaborado con selectas carnes de cerdo, especias naturales y embutido tradicional, ahumado a la perfección.</p>
+                            <a href="https://wa.me/573104503537?text=Hola,%20quiero%20pedir%20Chorizo%20Artesanal" target="_blank" class="btn btn-fuego-outline mt-auto">Pedir Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col-md-4">
+                    <div class="card product-card h-100 shadow">
+                        <img src="/img/carne.jpg" class="card-img-top" alt="Carne al barril">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Carne al Barril</h3>
+                            <p class="card-text">Jugosa carne cocinada lentamente con técnica de ahumado vertical en barril, logrando una textura y sabor inigualables.</p>
+                            <a href="https://wa.me/573104503537?text=Hola,%20quiero%20pedir%20Carne%20al%20Barril" target="_blank" class="btn btn-fuego-outline mt-auto">Pedir Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="col-md-4">
+                    <div class="card product-card h-100 shadow">
+                        <img src="/img/frijolada2.jpg" class="card-img-top" alt="Viernes de frijolada">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Viernes de Frijolada</h3>
+                            <p class="card-text">Nuestra tradicional frijolada casera acompañada de sus guarniciones clásicas para alegrar el cierre de semana.</p>
+                            <a href="https://wa.me/573104503537?text=Hola,%20quiero%20pedir%20la%20Frijolada" target="_blank" class="btn btn-fuego-outline mt-auto">Pedir Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="py-5 custom-about">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="shadow-lg rounded overflow-hidden border border-warning">
+                        <img src="/img/nosotros.jpg" alt="Nuestro Equipo de Trabajo" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title text-warning mb-3">Sobre Nosotros y Nuestro Equipo</h2>
+                    <div class="divider mb-4"></div>
+                    <p class="lead text-blanco-brillante fw-semibold">En Fuego Lento - Chorizo & Barril nos apasiona el arte de cocinar sin afanes, respetando los tiempos del fuego y la madera.</p>
+                    <p class="text-blanco-brillante">Nuestro equipo de trabajo está conformado por apasionados maestros parrilleros y expertos culinarios dedicados a rescatar los sabores tradicionales de la carne al barril y la charcutería artesanal. Cada miembro aporta su experiencia y dedicación para garantizar que cada plato que llegue a tu mesa sea una experiencia memorable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO Y UBICACIÓN -->
+    <section id="contacto" class="py-5 text-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-warning fw-bold">CONTACTO Y UBICACIÓN</h2>
+                <div class="divider mx-auto"></div>
+                <p class="text-blanco-brillante fs-5">Visítanos o comunícate con nosotros directamente.</p>
+            </div>
+            <div class="row g-4 align-items-stretch">
+                <!-- Tarjeta de Contacto -->
+                <div class="col-lg-6 d-flex">
+                    <div class="p-4 contact-card rounded shadow w-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="h4 text-warning mb-4 text-center">INFORMACIÓN DE CONTACTO</h3>
+                            
+                            <!-- Teléfono / WhatsApp -->
+                            <div class="mb-3 d-flex align-items-center">
+                                <i class="fab fa-whatsapp text-success fs-3 me-3"></i> 
+                                <a href="https://wa.me/573104503537" target="_blank" class="text-decoration-none text-white fw-bold fs-5">+57 310 4503537</a>
+                            </div>
+
+                            <!-- Correo Electrónico -->
+                            <div class="mb-4 d-flex align-items-center">
+                                <i class="fas fa-envelope text-warning fs-4 me-3"></i> 
+                                <a href="mailto:fuegolentochorizoybarril@gmail.com" class="text-decoration-none text-white fw-semibold text-break fs-6">fuegolentochorizoybarril@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Redes Sociales -->
+                        <div class="mt-3">
+                            <h5 class="text-blanco-brillante mb-3 fs-6">Síguenos en nuestras redes sociales:</h5>
+                            <div class="d-flex gap-2">
+                                <a href="https://www.facebook.com/FuegoLentoChorizoyBarril" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://instagram.com/fuegolentochorizoybarril?rpxt=bXozcWF3bWIydnZ2" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.tiktok.com/@fuegolentochorizoybarril?_r=1&_t=ZS-9AUkw160fyR" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Ubicación -->
+                <div class="col-lg-6 d-flex">
+                    <div class="p-4 contact-card rounded shadow w-100 d-flex flex-column justify-content-between text-center">
+                        <div>
+                            <h3 class="h4 text-warning mb-2">NUESTRA UBICACIÓN</h3>
+                            <p class="text-blanco-brillante mb-3 fs-6">Visítanos directamente en el mapa:</p>
+                            
+                            <!-- Recuadro del Mapa Interactivo -->
+                            <div class="map-responsive rounded overflow-hidden shadow mb-3 border border-warning">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3376.1897000728245!2d-76.50894812587946!3d3.3574112518388883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a15f86ce02b7%3A0x5886cb24bde3f18c!2sFuego%20Lento%20Chorizo%20%26%20Barril!5e1!3m2!1ses-419!2sco!4v1791809294025!5m2!1ses-419!2sco" 
+                                    width="100%" 
+                                    height="220" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="strict-origin-when-cross-origin">
+                                </iframe>
+                            </div>
+                        </div>
+
+                        <a href="https://maps.app.goo.gl/1GbHVWqt3uQ6Scg66" target="_blank" class="btn btn-warning btn-sm px-4 shadow fw-bold w-100 py-2">
+                            <i class="fas fa-external-link-alt me-2"></i> Abrir en la App de Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/573104503537?text=Hola,%20quiero%20más%20información%20sobre%20sus%20productos" class="whatsapp-float shadow" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="py-4 text-center text-white border-top border-danger" style="background-color: #0d0705;">
+        <div class="container">
+            <p class="mb-0 text-blanco-brillante">&copy; 2026 Fuego Lento - Chorizo & Barril. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
